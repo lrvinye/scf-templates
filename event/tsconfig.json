@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // 解析非相对模块的基地址，默认是当前目录
+    "rootDir": "./dev",
+    "outDir": "src", // 指定输出目录
+    "removeComments":true, // 删除注释 
+    "esModuleInterop": true, // 允许export=导出，由import from 导入
+    "target": "ESNext",
+    "module": "commonjs",
+    "declaration": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "skipLibCheck": true
+  },
+  "compileOnSave": false,
+  "include": [
+      "dev"
+    ],
+  "exclude": [
+    "node_modules",
+  ]
+}
