@@ -1,0 +1,11 @@
+{
+    "name": "verify-code",
+    "version": "0.0.1",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+      "tencentcloud-sdk-nodejs": "^4.0.230"
+    }
+  }
+  
