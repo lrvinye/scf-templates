@@ -1,0 +1,18 @@
+# serverless.yml
+component: layer
+
+app: app-name
+# 应用阶段
+stage: dev
+# (必填) 创建的实例名称
+name: layer-app-name
+
+inputs:
+  name: ${name}
+  region: ap-guangzhou # 服务地域
+  src:
+    src: ../node_modules # 您想要上传到层的项目路径，此处以 node_modules 为例
+    targetDir: /node_modules # 上传后的文件打包目录
+  runtimes:
+    - Nodejs10.15
+    - Nodejs12.16
